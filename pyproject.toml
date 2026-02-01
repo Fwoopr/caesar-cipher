@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "caesar-cipher-tool"
+version = "1.0"
+description = "A modular Python tool to encrypt, decrypt, and crack Caesar ciphers with automated English word detection."
+authors = [
+    { name = "Fwoopr" }
+]
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "pyfiglet",
+    "english-words",
+]
+
+[project.optional-dependencies]
+test = [
+    "pytest",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["."]
+python_files = "test_*.py"

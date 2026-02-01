@@ -21,6 +21,7 @@ caesar-cipher/
 ├── brute.py         # Brute-force attack implementation
 ├── main.py          # Main file to run the program
 ├── test_caesar.py   # Basic tests for the cipher
+├── pyproject.toml   # Project metadata and dependencies
 ├── requirements.txt
 └── .gitignore
 ```
@@ -35,11 +36,16 @@ git clone https://github.com/Fwoopr/caesar-cipher.git
 cd caesar-cipher
 ```
 **3. Install dependencies:**
+This project uses **pyproject.toml** for dependency management and packaging, following modern Python standards.
+```
+pip install .
+```
+**requirements.txt** is still provided for convenience.
 ```
 pip install -r requirements.txt
 ```
 ## Usage
-You can choose to either run the program **with** or **without** a given shift.
+You can choose to either run the program **with** a shift or **without** a shift (brute force).
 
 ### With
 Encrypts or decrypts the given message with the provided shift.
@@ -52,7 +58,11 @@ Brute forces decryption until the program finds a sentence including english wor
 python main.py
 ```
 ## Testing
-The provided unit tests work using **pytest**.
+The provided unit tests are written using **pytest**.
+Run the test with:
+```
+pytest
+```
 
 
 

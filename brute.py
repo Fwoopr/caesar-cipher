@@ -1,12 +1,13 @@
 from cipher import caesar_decrypt
 from english_words import get_english_words_set
 from pyfiglet import Figlet
+from cipher import ALPHABET_SIZE
 
 english_words = get_english_words_set(['web2'], lower=True)
 
 def brute_force_decrypt(message):
     trials = {}
-    for shift in range(1, 26):
+    for shift in range(1, ALPHABET_SIZE):
         valid_word_count = 0
         print(f'Trying shift {shift}:')
         decrypted_message = caesar_decrypt(message, shift)

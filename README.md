@@ -1,5 +1,6 @@
 # Caesar Cipher
 ![Python application tests](https://github.com/Fwoopr/caesar-cipher/actions/workflows/python-app.yml/badge.svg)
+
 A beginner-friendly Python project that implements the **Caesar Cipher** encryption technique.
 
 This project was created for learning purposes to better understand basic cryptography concepts and simple algorithms in Python.

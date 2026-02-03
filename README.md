@@ -50,12 +50,12 @@ You can choose to either run the program **with** a shift or **without** a shift
 ### With
 Encrypts or decrypts the given message with the provided shift.
 ```
-python main.py 3
+caesar 3
 ```
 ### Without
 Brute forces decryption until the program finds a sentence including english words.
 ```
-python main.py
+caesar
 ```
 ## Testing
 The provided unit tests are written using **pytest**.

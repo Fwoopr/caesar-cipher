@@ -24,3 +24,9 @@ test = [
 [tool.pytest.ini_options]
 testpaths = ["."]
 python_files = "test_*.py"
+
+[project.scripts]
+caesar = "main:main"
+
+[tool.setuptools]
+py-modules = ["main", "cipher", "brute"]
